@@ -1,0 +1,6 @@
+# nginx rewrite rule
+rewrite ^/([\w]+)/([\w]+)$ /index.php?controller=$1&&action=$2;
+rewrite ^/([\w]+)/([\w]+)/$ /index.php?controller=$1&&action=$2;
+rewrite ^/([\w]+)$ /index.php?controller=$1;
+rewrite ^/([\w]+)/$ /index.php?controller=$1;
+rewrite ^/([\w]+)/([\w]+)/([\w]+)$ /index.php?controller=$1&&action=$2&&id=$3;

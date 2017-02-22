@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog</title>
+    <link href='/css/index.css' rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/layui/src/css/layui.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/layui/src/layui.js"></script>
+</head>
+
+<body id="blog_article_body">
+<ul class="layui-nav">
+    <li class="layui-nav-item"><a href="/">主页</a></li>
+    <li class="layui-nav-item"><a href="/blog">博客</a></li>
+    <li class="layui-nav-item"><a href="/message">留言</a></li>
+    <li class="layui-nav-item"><a href="/about">关于</a></li>
+</ul>
+<div id = 'article_contents'>
+    <div style="margin-top: 30px">
+    </div>
+    <{foreach name = outer from = $articles item = article }>
+    <article style="color: #666">
+        <header>
+            <p class="date"><{$article.ctime}></p>
+            <h2><a href="/blog/article/<{$article.id}>"><{$article.title}></a></h2>
+            <br>
+            <input type="hidden" value="<{$article.id}>" class="article_id" name="article_id">
+        </header>
+        <section>
+            <{$article.content}>
+        </section>
+        <hr>
+        <br>
+    </article>
+    <{/foreach}>
+</div>
+</body>
+</html>

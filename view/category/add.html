@@ -1,0 +1,18 @@
+<{include file='admin/header.html'}>
+<link rel="stylesheet" href="/layui/src/css/layui.css">
+<script src="/layui/src/layui.js"></script>
+<form class="layui-form" action="/category/doadd" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">新增分类</label>
+        <div class="layui-input-inline">
+            <input type="text" name="name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+            <button type="reset" id="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+<{include file='admin/footer.html'}>
