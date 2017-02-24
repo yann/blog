@@ -40,7 +40,7 @@ use com\sql\MysqlBase;
         public function getList(){
             $results =array();
             $this->exec("SET NAMES 'utf8';");
-            $sql = "select id,title,author,summary,ctime from blog.article";
+            $sql = "select id,title,author,summary,ctime from blog.article ORDER BY id DESC ";
             $result = $this->query($sql);
             foreach ($result as $key=>$value) {
                 $value['ctime'] = date('Y-m-d',strtotime($value['ctime']));

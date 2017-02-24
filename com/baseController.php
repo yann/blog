@@ -12,7 +12,10 @@ class baseController extends mySmarty {
         return "Controller";
     }
     function __call($name, $arguments){
-        exit("function ".$name." doesn't exist.");
+        header("refresh:3;url=/");
+        $this->assign('name',$name);
+        $this->display('index/404.html');
+        //exit("function ".$name." doesn't exist.");
     }
     }
 

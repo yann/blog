@@ -42,7 +42,15 @@ use com\Request;
                    $actionName = $this->action;
                }
                 $controllerPath =  'controller\\'.$controllerName.'Controller';
-                $controller = new $controllerPath();
-                call_user_func_array(array($controller,$actionName),array());
+                $realpath = ROOT.'/controller/'.$controllerName.'Controller.php';
+                if (file_exists($realpath)){
+                    $controller = new $controllerPath();
+                    call_user_func_array(array($controller,$actionName),array());
+                }
+                else{
+                    header("refresh:2;url=/");
+                   include_once "../html/404.html";
+                }
+
         }
     }

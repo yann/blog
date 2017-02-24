@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-01-30 21:09:51
+/* Smarty version 3.1.31, created on 2017-02-23 22:40:02
   from "/var/www/html/blog/view/blog/article.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_588f3b1f2a2881_98329637',
+  'unifunc' => 'content_58aef442813870_79038059',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c7d79830e1d4bc89a76a20e8e42219ac11e11c1e' => 
     array (
       0 => '/var/www/html/blog/view/blog/article.html',
-      1 => 1485747383,
+      1 => 1487772782,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_588f3b1f2a2881_98329637 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58aef442813870_79038059 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,6 +71,28 @@ foreach ($_from as $_smarty_tpl->tpl_vars['article']->value) {
         <hr>
         <br>
     </article>
+
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="<?php echo $_smarty_tpl->tpl_vars['article']->value['id'];?>
+" data-title="<?php echo $_smarty_tpl->tpl_vars['article']->value['title'];?>
+" data-url="http://www.yann.site/blog/article/<?php echo $_smarty_tpl->tpl_vars['article']->value['id'];?>
+"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        var duoshuoQuery = {short_name:"yann"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    <?php echo '</script'; ?>
+>
+    <!-- 多说公共JS代码 end -->
     <?php
 }
 }
