@@ -15,8 +15,8 @@ use com\sql\PDOBase;
         public function __construct($dbname ='')
         {
             $this->host = '121.42.56.179';
-            $this->username = 'yann';
-            $this->password = 'YYOO00OO00';
+            $this->username = '';
+            $this->password = '';
             $this->type = 'mysql';
             if (!empty($dbname)) {
                 $this->dbname = $dbname;
