@@ -16,8 +16,7 @@ use com\Request;
         }
         public function router(){
 
-            if (isset($_SERVER['argv']) and count($_SERVER['argv'])>1)
-            {
+            if (isset($_SERVER['argv']) and count($_SERVER['argv'])>1){
                 $this->controller = $_SERVER['argv'][1];
                 if (isset($_SERVER['argv'][2]))
                 $this->action= $_SERVER['argv'][2];

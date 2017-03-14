@@ -10,9 +10,18 @@ use com\sql\MysqlBase;
 use model\adminModel;
 class loginController extends baseController{
     public function index(){
+        $token = md5(time());
+        $_SESSION['token'] = $token;
+        $this->assign('token',$token);
         $this->display('login/index.html');
     }
     public function check(){
+
+       if (!isset($_POST['token']) and $_POST['token'] != $_SESSION['token'])
+       {
+            echo 'no csrf!';
+            exit;
+       }
         $username = $_POST['username'];
         $password = $_POST['password'];
         $md5_username = md5($username);

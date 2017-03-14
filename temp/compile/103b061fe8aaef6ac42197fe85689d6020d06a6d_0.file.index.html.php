@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-02-23 22:48:39
+/* Smarty version 3.1.31, created on 2017-02-26 17:55:34
   from "/var/www/html/blog/view/about/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_58aef6477e76e8_44488013',
+  'unifunc' => 'content_58b2a616d23392_43781747',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '103b061fe8aaef6ac42197fe85689d6020d06a6d' => 
     array (
       0 => '/var/www/html/blog/view/about/index.html',
-      1 => 1487861316,
+      1 => 1488102822,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58aef6477e76e8_44488013 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58b2a616d23392_43781747 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html><!--[if IE]>  <html class="ie"> <![endif]-->
 <html>
@@ -48,7 +48,7 @@ function content_58aef6477e76e8_44488013 (Smarty_Internal_Template $_smarty_tpl)
 		<div>
 		<article style="margin:1% 0 5% 15%;border-bottom: solid 1px aquamarine; border-left: solid 1px red ;float: left">
 
-			<div class="stl_02">
+			<div class="stl_02" style="font-size: 1.2em">
 			<div class="stl_03">
 				<object data="/pdf/1.pdf_files/img_06.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.1667em;">
 					<embed src="/pdf/1.pdf_files/img_06.svg" type="image/svg+xml" />
@@ -83,8 +83,9 @@ function content_58aef6477e76e8_44488013 (Smarty_Internal_Template $_smarty_tpl)
 					<div class="stl_01 stl_12" style="top: 23.9528em; left:31.5127em;"><span class="stl_13 stl_14 stl_29">PHP开发实习生 &nbsp;</span></div>
 					<div class="stl_01 stl_12" style="top: 25.2134em; left:12.7401em;"><span class="stl_30 stl_14 stl_37">在该公司实习时，主要是做数据爬取的功能。该公司有一套完善的PHP爬虫系统。平时的主要是工作就是 &nbsp;</span></div>
 					<div class="stl_01 stl_32" style="top: 26.2938em; left:11.1645em;"><span class="stl_30 stl_14 stl_38">利用该爬虫系统进行数据抓取，爬虫系统不能人工部署时，就会会涉及到利用snoopy，curl去取抓取页面，利 &nbsp;</span></div>
-					<div class="stl_01 stl_32" style="top: 27.3742em; left:11.1645em;"><span class="stl_30 stl_14 stl_39">用正则表达式匹配到页面的form表格，或者获取json转化为html中的表格，利用自带爬虫系统去解析表格，存 &nbsp;</span></div>
-					<div class="stl_01 stl_32" style="top: 28.4547em; left:11.1645em;"><span class="stl_30 stl_14 stl_10">入数据库。 &nbsp;</span></div>
+					<div class="stl_01 stl_32" style="top: 27.3742em; left:11.1645em;"><span class="stl_30 stl_14 stl_39">用正则表达式匹配到页面的form表格，或者获取json转化为html中的表格，利用爬虫系统去解析表格，存 &nbsp;</span></div>
+					<div class="stl_01 stl_32" style="top: 28.4547em; left:11.1645em;"><span class="stl_30 stl_14 stl_10">入数据库。除了爬虫以外还做了处理数据的网页工具，包括界面和功能，功能一般是对数据进行分批处理，</span></div>
+					<div class="stl_01 stl_32" style="top: 29.4547em; left:11.1645em;"><span class="stl_30 stl_14 stl_10">按照给定的格式入库。</span></div>
 					<div class="stl_01 stl_22" style="top: 30.8647em; left:1.7557em;"><span class="stl_23 stl_14 stl_10" style="font-weight:bold;">项目经验 &nbsp;</span></div>
 					<div class="stl_01 stl_24" style="top: 31.3008em; left:9.1612em;"><span class="stl_25 stl_09 stl_10"></span></div>
 					<div class="stl_01 stl_12" style="top: 32.8214em; left:1.8457em;"><span class="stl_13 stl_14 stl_40">2016.5.1-2016.5.15 &nbsp;</span></div>
